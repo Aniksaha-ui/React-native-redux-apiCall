@@ -22,7 +22,7 @@ export const getCategory =()=>async(dispatch)=>{
         }
      
         
-       const {data} = await axios.get('https://ecotech.xixotech.net/public/api/allcategory',config)
+       const {data} = await axios.get('https://ecommerce.xixotech.net/public/api/category',config)
            
        dispatch({
             type:ALL_CATEGORY_SUCCESS,

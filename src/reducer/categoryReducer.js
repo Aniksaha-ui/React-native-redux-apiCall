@@ -18,7 +18,7 @@ import {
             case ALL_CATEGORY_SUCCESS:
                 return{
                     loading:false,
-                    category:action.payload.data
+                    category:action.payload.category
                 }
             case ALL_CATEGORY_FAIL:
                 return{
