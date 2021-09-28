@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { View,Text } from "react-native";
 
 
-const Product = ({navigation})=>{
+const Product = ({})=>{
 
     useEffect(()=>{
         const  id =  (navigation.getParam('id'));

@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { StyleSheet,ScrollView, Text, View } from 'react-native';
 import { Provider } from 'react-redux';
 import * as Font from 'expo-font'
-
+import Navigator from './routes/drawer'
 import { NativeRouter, Route, Link } from "react-router-native";
 import Category from './component/Category/category';
-import Navigator from './routes/homeStack'
+
 
 const getFonts =()=>Font.loadAsync({
   'Nunito-Black':require('./assets/Nunito/Nunito-Black.ttf'),
@@ -21,20 +21,21 @@ export default function App() {
  
   return (
     <Provider store={store} >
-    <NativeRouter>
+    {/* <NativeRouter> */}
     <View style={styles.container}>
       
       <Navigator />
      
     </View>
-    </NativeRouter>
+    {/* </NativeRouter> */}
     </Provider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    padding:10,
+   backgroundColor:'#fff',
+   
     flex: 1,
   },
 });

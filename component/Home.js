@@ -1,6 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
 import { Button, StyleSheet, Text, View } from 'react-native';
+import Product from '../component/Product/product'
 const Home =({navigation})=>{
 
     const pressHandler=()=>{
@@ -9,9 +10,12 @@ const Home =({navigation})=>{
     }
 
     return(
-        <View style={styles.clearfix}>
-            <Button style={styles.button} title="GET STARTED" onPress={pressHandler}></Button>
+        <View>
+            <View style={styles.clearfix}>
+                <Button style={styles.button} title="GET STARTED" onPress={pressHandler}></Button>
+            </View>
         </View>
+        
     )
 }
 
